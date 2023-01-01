@@ -1,0 +1,58 @@
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+dl,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  /* font */
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* a태그 초기화 */
+a {
+  color: #282c37;
+  text-decoration: none;
+  text-decoration-line: none !important;
+}
+a:hover {
+  color: var(--primary-color);
+}
+
+/* 기본 글자색 지정 */
+span {
+  color: #282c37;
+}
+
+/* 페이지 내의 스크롤바 없애기 */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* font */
+  font-family: "Dongle", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}

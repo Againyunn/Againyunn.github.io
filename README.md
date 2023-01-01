@@ -1,2 +1,6 @@
 # Againyunn.github.io
-shoppingmall backoffice
+
+### Frontend Developer Jaeyun Jung's Personal Web Page
+
+version: 23.01.01
+used: react.js
