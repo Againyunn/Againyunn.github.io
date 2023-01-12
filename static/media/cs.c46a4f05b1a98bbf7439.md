@@ -2,15 +2,13 @@
 
 ## ✨서버, 네트워크
 
-***22.09.05 이장희부장님 강의***
-
-### 1️⃣VPC**(virtual private connection)**
+### VPC**(virtual private connection)**
 
 **특징:** 
 
 네트워크 분리
 
-### 2️⃣AWS의 **지원도구:**
+### AWS의 **지원도구:**
 
 1. **Route 53**
     
@@ -131,7 +129,7 @@
         docker 컨테이너를 가지고 서비스화
         
 
-### 3️⃣ Virtual Machine VS Docker
+### Virtual Machine VS Docker
 
 1. **Virtual Machine(가상머신):**
     
@@ -176,9 +174,7 @@
 
 ## ✨ 프로그래밍 기법
 
-***22.09.06 이승훈이사님 강의***
-
-### **1. Agile기법**
+### **Agile기법**
 
 - **장점:**
     
@@ -245,7 +241,7 @@
         process 자체의 개선을 목표로 splint 회고 진행
         
 
-### 2. 캄반 기법
+### 캄반 기법
 
 **특징:**
 
@@ -262,13 +258,13 @@ to do  / in progress / done 의 일반적인 3단 구성
 
 **자율적으로 업무를 선택하지만, 성과가 한 눈에 보인다.**
 
-### 3. Pair Programming
+### Pair Programming
 
 보통 시니어의 작업을 주니어가 관찰
 
 - 언어, 프로그램을 잘 모를 때 가장 효과적
 
-### 4. TDD 기법
+### TDD 기법
 
 모든 기능과 컴포넌트에 대한 Test Code를 먼저 만들고 하나씩 에러들을 해결하는 방식으로 전체적인 코드 작성 및 개발
 
@@ -279,7 +275,7 @@ to do  / in progress / done 의 일반적인 3단 구성
 **테스트 코드가 쌓이고, 하나씩 테스트 코드의 오류를 최소한의 단위로 해결하는 방식**
 소스코드의 품질은 최상급 생성 가능
 
-### 5. CICD
+### CICD
 
 **test code :** 업데이트 및 작업 시 test의 자동화를 위해 test code 존재
 서버에서 자동으로 test code를 돌려서 merge 시 오류 검사가 가능
@@ -287,8 +283,6 @@ to do  / in progress / done 의 일반적인 3단 구성
 ---
 
 ## ✨HTTP와 HTML
-
-***22.09.14 이승훈이사님 강의***
 
 [[HTTP 기초_1] 헤더 (요청(Request) 헤더, 응답(Response)헤더)](https://goddaehee.tistory.com/169)
 
@@ -371,8 +365,6 @@ content-type
 ---
 
 ## ✨**FIGMA**
-
-***22.09.14 geeksloft 장보듬 수습연구원***
 
 ### 특징:
 
@@ -490,11 +482,9 @@ Amima(유료)
 
 ---
 
-## ✨CSS
+## ✨HTML & CSS
 
-*22.09.20 이승훈이사님 세미나*
-
-### 1. HTML의 기본구조
+### HTML의 기본구조
 
 [HTML 기본 구조,웹 문서 구조(HTML 문서 구조), HTML문서 확장자, HTML 문서의 기본구조, HTML의 구성요소](https://codedragon.tistory.com/3286)
 
@@ -518,7 +508,7 @@ Amima(유료)
 
 **열:** col  → span으로 사용했던 역할
 
-## 2. CSS기초
+## CSS기초
 
 [CSS 프로그래밍 기초](https://dinfree.com/lecture/frontend/122_css_1)
 
@@ -594,6 +584,8 @@ Arab language(오 → 왼)으로 타 언어와 읽는 방식이 다르기 때문
     
     [](https://wormwlrm.github.io/2021/01/24/Introducing-WebRTC.html)
     
+    ---
+    
     ## ✨객체지향과 컴포넌트
     
     ### 절차 지향 → 객체 지향
@@ -647,6 +639,8 @@ Arab language(오 → 왼)으로 타 언어와 읽는 방식이 다르기 때문
     
     사용량, 접속량을 예측/관리해야 하는 부담 존재
     
+    ---
+    
     ## ✨Redis
     
     **도입 배경:**
@@ -678,7 +672,9 @@ Arab language(오 → 왼)으로 타 언어와 읽는 방식이 다르기 때문
         
     
 
-## KafKa
+---
+
+## ✨KafKa
 
 apache kafka는 실시간으로 기록 스트림을 게시, 구독, 저장 및 처리할 수 있는 분산 데이터 스트리밍 플랫폼
 
@@ -702,17 +698,19 @@ consumer: 메시지(이벤트)를 구독
 
 ---
 
-## 아토믹 디자인
+## ✨아토믹 디자인
 
 [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/#atoms)
 
-## API vs Middleware
+---
+
+## ✨API vs Middleware
 
 [What is the difference between API and middleware?](https://www.peerspot.com/questions/what-is-the-difference-between-api-and-middleware)
 
 ---
 
-## JWT(Json Web Token)
+## ✨JWT(Json Web Token)
 
 JWT의 정의
 
@@ -720,7 +718,7 @@ JWT의 정의
 
 ---
 
-## Django Transaction
+## ✨Django Transaction
 
 ### transaction 특성:
 
@@ -741,7 +739,7 @@ atomic transaction은 DB를 단일 프로세스가 점유하여 해당 코드 �
 
 ---
 
-## Docker
+## ✨Docker
 
 **container :** 프로세스, container image가 실행(run)되고 있는 상태를 container라고 지칭
 
@@ -750,3 +748,221 @@ atomic transaction은 DB를 단일 프로세스가 점유하여 해당 코드 �
 docker build  → image 가 생성(보통 docker image라고 부르는 것이 container image) 
 
 * Image라고 하지만, 실질적으로는 build된 파일의 결과물 file을 지칭한다.
+
+---
+
+## ✨Flutter
+
+### Flutter 개요
+
+cross platform을 위해(android, ios를 동시 개발)
+
+성능 이슈로 인해 native로 개발. 그 외에 속도 자체는 cross platform 개발이 가능한 Flutter가 유리
+
+개발 효율이 native보다 20%개발 소요가 필요
+
+but, 양쪽 플랫폼 모두 개발한다는 가정 하에 200% → 120%으로 가능
+
+구글은 Flutter로 Kotlin을 대체하려는 목적
+
+### Cross Platform의 필요성
+
+네이티브 개발 시, 기획/디자인도 2가지가 필요하며 개발 인력 및 소요시간도 감축 가능
+
+### Dart로 언어 도입 이유
+
+- 두가지 컴파일 방법을 지원(실시간 + 컴파일)
+- 핫 리로드가능(수정하는 순간 바로 수정사항이 적용) → 실시간 개발, 제품 출시 시 컴파일 가능
+- 초당 60프레임의 애니메이션 속도
+- 선제적 스케툴링
+- lock없이 개비지스토어 사용가능
+
+### Dart의 주요 특징
+
+- null safety
+    
+    null point error 해결을 위해
+    
+    자료형 뒤에 ?가 없으면 null자체가 선언되지 않는다.
+    
+- js의 var 변수와 동일한 데이터 형이 존재
+    
+    그렇지만 js와 달리 var의 데이터 형을 식별하고 연산 시 컴파일러가 이를 감지한다.
+    
+- null safety의 데이터 캐스팅 방법
+    
+    nullable과 un-nullable 간의 연산, 대입 시 캐스팅이 필요하다.
+    
+- late 키워드 존재
+    
+    null 값이더라도 추후에 값이 할당될 수 있음을 컴파일러에게 선언
+    
+
+협업 시, null safety로 인해 개발 시 에러나 개발의 어려움이 존재할 수 있다.
+
+- 자료형 특징
+    
+    num 자료형이 존재(int, double의 개념을 포괄)
+    
+    var, dynamic 자료형이 존재(선언의 형태를 보고 컴파일러가 자료형을 추정 및 산정)
+    
+    - var: 선언 시기에 자료형을 지정
+    - dynamic: js의 let처럼 자유롭게 자료형 및 내용 수정 가능
+    
+    final, const,  dynamic이 존재
+    
+    - final: runtime 중에만 수정 가능, 런타임에 변수가 선언되는 순간 그 이후에 수정 불가능
+    - const: compile 단계에서부터 실제 실행까지 모두 수정 불가능
+
+컴파일러가 최적화를 위해 동적으로 바뀌지 않는 변수, 값은 메모리에 값 그 자체를 박아 넣어버린다.
+
+Flutter는 객체지향으로 각 위젯들이 객체역할을 수행한다.
+
+메모리에 실제 올라간 위젯, 객체가 매칭되어 올라간다.
+
+- 언어의 특징
+    
+    _function()으로 private function을 지정한다.
+    
+    json형태의 데이터를 파싱하면 map객체를 그대로 받아올 수 있다.(js와 유사한 형태)
+    
+    const로 선언된 함수나 객체 내의 값이 동적으로 수정되면(내부 parameter나 value가 수정되면) error를 낸다.
+    
+    interface 존재
+    
+    함수 내에 optional, named parameter가 존재
+    
+
+### Flutter의 특징
+
+- 위젯의 수정사항 존재 시 다시 build 여부 지정
+    
+    statelessWidget
+    
+    statefulWidget
+    
+    이를 위해 getX와 같은 상태관리 라이브러리를 사용
+    
+    → 변경된 값만을 추적하여 해당 위젯만을 re-build 처리하여 성능을 개선
+    
+    1) GetBuilder로서 build처리: 내부에서 지정된 데이터가 변경되는 것만을 추적하여 화면을 리랜더링
+    
+    2) Obx()로 선언된 데이터만을 변경내역 추적
+    
+- 웹 개발 처럼 router로서 각 페이지와 위젯이동이 처리된다.
+    
+    initialRoute로 uri를 지정
+    
+
+- theme가 별도로 존재
+    
+    android는 각 버전별로 theme가 다름
+    
+- child와 children의 형태로 각 위젯을 상속받고 내부에 그리는 형태 - 태그와 유사
+    
+    row, column은 children 내부에 사용
+    
+    child 내부에는 단 하나의 widget만 선언 가능
+    
+
+- column, row는 웹의 flex와 유사하다.
+    
+    column → flex-direction: row
+    
+    row → flex-direction: column
+    
+    각 함수 내부에 선언된 child는 웹의 flex내부의 태그들과 동일한 움직임을 가진다.
+    
+
+- 크기 조절 시, 디바이스마다 화면의 크기가 다르기 때문에 웹처럼 특정 pixcel 단위로 크기를 조정하지는 않는다.
+    
+    
+
+### 라이브러리
+
+pub로 Flutter 파일을 managing한다.
+
+pub.dev에서 검색하여 찾을 수 있다.
+
+pubspec.yaml에서 설치된 의존성 관계 및 라이브러리, 환경을 확인할 수 있다.
+
+### 상태관리
+
+statefulWidget(동적), statelessWidget (정적) 상태 관리를 지정하여 위젯의 유형을 지정할 수 있다.
+
+(긱스로프트에서는 statefulWidget(동적)으로 주로 개발한다.)
+
+정적상태로 widget 지정 시, 데이터가 변경되면 전체 화면이 새로 랜더링된다.
+
+getX 상태관리 라이브러리를 가장 대중적으로 이용한다.(22.08 기준)
+
+statelessWidget인 경우에만 getX를 사용한다.
+
+getX의 상태관리 방식
+
+- 단순상태관리
+    
+    update()라는 함수가 실행될 때만 데이터의 변화를 인지
+    
+- 반응형 상태관리
+    
+    RxInt, RxString 등… Rx가 포함된 데이터 타입 선언
+    
+    사용 시 .value로 접근해야 화면에 랜더링이 가능하다.
+    
+
+getX를 사용할 경우 getXXXXX 형태로 get으로 시작하는 메소드를 사용한다.
+
+### 디자인 패턴 특성
+
+위젯에 따라 개별적인 controller를 매칭하여 사용할 수 있다.
+
+mvvm의 형태로 사용할 수 있다.(각 view에 맞는 controller를 개별적으로 지정하여 타 컴포넌트나 페이지에 재사용할 때 별도의 데이터 바인딩 없이 해당 view(컴포넌트) 단위로 쉽게 사용할 수 있다.)
+
+---
+
+# ✨Architecture Pattern
+
+* 이름 자체는 controller, presenter, view model등 다양할 수 있다. 이때 단순히 이름만으로 디자인 패턴을 판단해서는 안되고 유사한 역할을 할 수 있다는 것정도만 인지하고 디자인 패턴을 파악해야 한다.
+
+* 복잡한 서비스가 될수록 백엔드에서 MC를 담당하지만, V안에서도 MVC가 존재하는 경우가 많다. 따라서 프론트엔드 개발 시에도 최소한의 MVC패턴을 적용하면 재사용성 및 가독성을 높일 수 있다.
+
+### MVC패턴
+
+view(화면, 사용자의 반응도 포함)
+
+controller(view의 변경 내역을 인지하여 데이터 제공을 위한 조절 기능)
+
+model(데이터나 클래스 등 다방면적인 데이터 처리를 위한 공간, 데이터를 다시 view로 전달)
+
+* view와 model이 긴밀하게 연계
+
+(django → MTV패턴 template이 view 역할, view가 controller 역할 수행)
+
+### MVP패턴
+
+presenter가 controller의 역할을 대신하며, model에서 DB가 변경되어도 model에서 view로 바로 데이터를 보내는 것이 아니라 presenter가 다시 중계하여 view에 전달
+
+* view와 model은 서로 직접 연결되지 않고 반드시 presenter를 통해 사용한다.
+
+* view와 presenter가 1대1관계로 연계되어 있다.
+
+### MVVM패턴
+
+view model이 presenter와 controller의 역할을 대신하며, 
+
+view가 자신에게 해당하는 view model을 찾는다.
+
+- frontend에서 보여주는 화면은 동일하지만 내부의 데이터와 로직이 다른 경우에 각 각에 맞는 viewmodel을 찾아서 model이 적합한 로직을 실행한다.
+
+model이 view의 업데이트를 처리
+
+### MVI패턴
+
+model, veiw, intent 각각의 연계가 단방향&순환 구조로 데이터를 처리, 상호 간의 의존성 없음
+
+intent 사용자를 관찰하고 view에서 특정 값이 변경되거나 변경사항이 존재하면 intent가 직접 이를 인지한다.
+
+**참고소스**
+
+[MVC, MVP, MVVM 을 예제와 함께 알아보자 - android](http://gitsu.tistory.com/38)
