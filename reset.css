@@ -56,3 +56,9 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+
+/* 텍스트 드래그 선택 시 색상 지정 */
+body ::selection {
+  background-color: #f06548;
+  color: #fff;
+}
