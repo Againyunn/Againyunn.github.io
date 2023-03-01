@@ -73,7 +73,7 @@ const product = {
 const product:{
   id: string;
   price: number;
-  tags: string[];
+  tags: string[]
   details: {
     title: string;
     description: string;
@@ -910,7 +910,7 @@ console.log(accounting.name);
 console.log(accounting.describe());
 ```
 
-**Private, Public access**
+`**private`, `public` access**
 
 Public access EX
 
@@ -993,9 +993,9 @@ accounting.printEmployeeInformation();
 ```jsx
 class Department {
   // private name: string;
-  private employees: string[] = [];
+  private employees: string[] = []; // 클래스 외부에서는 employees 값을 제어할 수 없다.
 
-  constructor(private id: string, public name: string) {
+  constructor(private id: string, public name: string) { // 생성자의 매개변수 상태로 클래스의 변수를 직접 지정가능
     // this.name = n;
   }
 
@@ -1013,3 +1013,153 @@ class Department {
   }
 }
 ```
+
+**`readonly`**
+
+ts는 한번 지정된 값이 다시 수정되지 못하도록 제한할 수 있다.(읽기 전용 메서드를 붙임으로서)
+
+또한 생성자에서 자체적으로 클래스 내에 사용할 변수를 지정할 수 있다.(두번 지정하는 불편함을 방지할 수 있음)
+
+```tsx
+class Department {
+  // private readonly id: string;
+  public name: string;
+  private employees: string[] = [];
+
+  constructor(private readonly id: string, n: string) { // readonly를 붙임으로서, 처음 지정한 값 상태를 변경할 수 없다.
+    this.name = n;
+  }
+
+  describe(this: Department) {
+    console.log(`Department(${this.id}): `, this.name);
+  }
+
+  addEmployee(employee: string) {
+    this.employees.push(employee);
+  }
+
+  printEmployeeInformation() {
+    console.log(this.employees.length);
+    console.log(this.employees);
+  }
+}
+
+const accounting = new Department(1, "Accounting");
+
+accounting.addEmployee("Max");
+accounting.addEmployee("Manu");
+accounting.describe();
+accounting.printEmployeeInformation();
+```
+
+그러나 private, public, readonly는 js에 존재하지 않는 코드와 구조이므로 js로 컴파일하면 실질적으로는 해당 코드들이 사라진다.
+
+또한 Class 내의 method로 선언한 함수객체는 Class의 prototype객체의 메서드의 형태로 지정된다.
+
+prototype: 객체 내에 속성과 값에 대해 정의된 메서드로 객체의 속성값을 모두 가지고 있다.
+
+js는 prototype을 통해 상속을 구현한다.
+
+**상속성, 다형성**
+
+타 프로그래밍 언어와 마찬가지로, class를 상속받으면 부모 class의 모든 속성과 정보를 하위 class는 내장하게 된다.
+
+상위 class에서 선언된 메소드와 동일한 메소드를 선언하고 재정의해도 사용이 가능하다.(오버라이딩)
+
+BUT, `private` 변수는 class상속을 받은 자식 class에서 접근할 수 없다.
+
+따라서 상속받는 하위 class도 사용할 수 있는 한정자는 `protected` 이다.
+
+```jsx
+// class 상속
+class Department {
+  // private readonly id: string;
+  public name: string;
+  protected employees: string[] = [];
+...
+}
+
+// class를 상속받으면 생성자를 포함하여 Department 클래스가 가진 모든 속성과 정보를 자동으로 가져온다.
+class ITDepartment extends Department {
+  // public admins: string[]
+
+  constructor(id: string, public admins: string[]) {
+    super(id, "IT"); // 상속할 변수에 하위 class가 변수에 조작을 가해야 하는 경우(해당 하위 class 공통적으로)
+    // super와 this를 함께 사용해야 하는 경우에는 반드시 super가 this보다 코드 상위에 위치해야 한다.
+  }
+}
+
+class AccountingDepartment extends Department {
+  constructor(id: string, private reports: string[]) {
+    super(id, "Accounting");
+  }
+
+  addEmployee(employee: string): void {
+    this.employees.push(employee); 
+		// 만약 부모class에서 변수에 private이 붙었다면, 상속하여 사용이 불가능하지만 protected로 상속받은 class 내에서는 사용가능하도록 제한을 완화
+  }
+
+  addReport(text: string) {
+    this.reports.push(text);
+  }
+
+  printReports() {
+    console.log(this.reports);
+  }
+}
+```
+
+**`getter`, `setter`**
+
+getter : 값을 가지고 올 때 함수나 메소드를 실행하는 속성 → void 일 수 없으며, 반드시 return 값이 존재
+
+setter: 값을 설정할 때 함수나 메소드를 실행하는 속성 → 메서드에 매개변수를 대입하는 형태로 작성(코드 참고)
+
+* getter 와 setter를 이용하여 private, protected 한정자를 가진 변수의 값을 class의 외부에서 가져오거나 수정할 수 있다.
+
+```jsx
+class AccountingDepartment extends Department {
+  private lastReports: string;
+
+  // getter 함수
+  get mostRecentReports() {
+    if (this.lastReports) return this.lastReports;
+
+    throw new Error("not found any report");
+  }
+
+  // setter 함수
+  set mostRecentReports(value: string) {
+    this.addReport(value);
+  }
+
+  constructor(id: string, private reports: string[]) {
+    super(id, "Accounting");
+    this.lastReports = reports[0];
+  }
+
+  addEmployee(employee: string): void {
+    this.employees.push(employee);
+  }
+
+  addReport(text: string) {
+    this.reports.push(text);
+    this.lastReports = text;
+  }
+
+  printReports() {
+    console.log(this.reports);
+  }
+}
+
+const accounting = new AccountingDepartment("d1", ["Max"]);
+
+accounting.addEmployee("Max");
+accounting.addEmployee("Manu");
+accounting.describe();
+accounting.printEmployeeInformation();
+console.log(accounting.mostRecentReports); // getter로 private lastReports의 값을 가져올 수 있다.
+accounting.mostRecentReports = "new report"; // setter로 private lastReports의 값을 지정할 수 있다.
+```
+
+---
