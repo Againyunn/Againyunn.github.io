@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fde8a0f9.css",
-    "main.js": "/static/js/main.c58c139b.js",
+    "main.js": "/static/js/main.d30ee812.js",
     "react-syntax-highlighter/refractor-core-import.js": "/static/js/react-syntax-highlighter/refractor-core-import.5551a99e.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/static/js/react-syntax-highlighter_languages_refractor_abap.aefee3b2.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/static/js/react-syntax-highlighter_languages_refractor_actionscript.daa61715.chunk.js",
@@ -156,10 +156,13 @@
     "react-syntax-highlighter_languages_refractor_yaml.js": "/static/js/react-syntax-highlighter_languages_refractor_yaml.76f84591.chunk.js",
     "static/media/ProjectBase.png": "/static/media/ProjectBase.05f4230df0e6dab21b2b.png",
     "static/media/homepageRenewal.gif": "/static/media/homepageRenewal.64281134b84cda115e86.gif",
+    "static/media/profile.jpg": "/static/media/profile.af96e68361bc8289756e.jpg",
     "static/media/WYDM7.png": "/static/media/WYDM7.09c65f7c33c597005d66.png",
     "static/media/WYDM6.png": "/static/media/WYDM6.1470ff7198ddc2735d34.png",
     "static/media/camin4.png": "/static/media/camin4.596a210bea82ea323edf.png",
     "static/media/WYDM1.png": "/static/media/WYDM1.70fe6bcc475311484b3a.png",
+    "static/media/picture_profile.jpg": "/static/media/picture_profile.ee65b47dbceee4c50032.jpg",
+    "static/media/s_picture_profile.jpg": "/static/media/s_picture_profile.4a5c0b6ba1d48060186b.jpg",
     "static/media/GeeksloftHomepage2.png": "/static/media/GeeksloftHomepage2.61a473cc0b4bc895f60a.png",
     "static/media/camin3.png": "/static/media/camin3.7595a75831215e3d04ec.png",
     "static/media/camin1.png": "/static/media/camin1.6de67cba282bc8dbffb3.png",
@@ -176,7 +179,6 @@
     "static/media/WYDM8.png": "/static/media/WYDM8.5e66ae0962263947a8e5.png",
     "static/media/valto4.png": "/static/media/valto4.75af59d17feade857b33.png",
     "static/media/WYDM2.png": "/static/media/WYDM2.7a4fafa20912a75104d6.png",
-    "static/media/profile.jpg": "/static/media/profile.61d7e5f7491025c3ee6b.jpg",
     "static/media/shoppingMallAdmin1.png": "/static/media/shoppingMallAdmin1.9972874f104a52e4de88.png",
     "static/media/shoppingMallAdmin4.png": "/static/media/shoppingMallAdmin4.9e627579f2ea0dfdd556.png",
     "static/media/shoppingMallAdmin6.png": "/static/media/shoppingMallAdmin6.eaa0ac4ca7222236edf9.png",
@@ -186,9 +188,7 @@
     "static/media/shoppingMallAdmin2.png": "/static/media/shoppingMallAdmin2.81bb10cb184b9f37c2c4.png",
     "static/media/shoppingMallAdmin7.png": "/static/media/shoppingMallAdmin7.7494686fafc7412ea742.png",
     "static/media/DigitalPharm10.png": "/static/media/DigitalPharm10.f85cd6291b71c3862c63.png",
-    "static/media/s_picture_profile.jpg": "/static/media/s_picture_profile.6fe617128d60b3debbdb.jpg",
     "static/media/DigitalPharm7.png": "/static/media/DigitalPharm7.75acd1aaddb37424e4b2.png",
-    "static/media/picture_profile.jpg": "/static/media/picture_profile.e6b572871d86ed47f95f.jpg",
     "static/media/WYDM3.png": "/static/media/WYDM3.d641a5e660d51071d2a4.png",
     "static/media/DigitalPharm6.png": "/static/media/DigitalPharm6.da6ed51e31ec98b49f31.png",
     "static/media/DigitalPharm8.png": "/static/media/DigitalPharm8.e391e09a5665b9f80d8e.png",
@@ -207,7 +207,7 @@
     "index.html": "/index.html",
     "static/media/spinner.svg": "/static/media/spinner.b6747d7bd9e34b56424c.svg",
     "main.fde8a0f9.css.map": "/static/css/main.fde8a0f9.css.map",
-    "main.c58c139b.js.map": "/static/js/main.c58c139b.js.map",
+    "main.d30ee812.js.map": "/static/js/main.d30ee812.js.map",
     "refractor-core-import.5551a99e.chunk.js.map": "/static/js/react-syntax-highlighter/refractor-core-import.5551a99e.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.aefee3b2.chunk.js.map": "/static/js/react-syntax-highlighter_languages_refractor_abap.aefee3b2.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.daa61715.chunk.js.map": "/static/js/react-syntax-highlighter_languages_refractor_actionscript.daa61715.chunk.js.map",
@@ -363,6 +363,6 @@
   },
   "entrypoints": [
     "static/css/main.fde8a0f9.css",
-    "static/js/main.c58c139b.js"
+    "static/js/main.d30ee812.js"
   ]
 }
